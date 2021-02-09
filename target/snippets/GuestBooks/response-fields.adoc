@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|`+[0].name+`
+|`+String+`
+|This is the name of the commenter
+
+|`+[0].comment+`
+|`+String+`
+|This is the comment in the Guest Book
+
+|===

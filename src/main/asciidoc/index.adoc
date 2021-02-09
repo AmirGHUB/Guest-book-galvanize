@@ -1,0 +1,19 @@
+Guest Book
+
+Get All Guest Books
+
+.request
+include::{snippets}/GuestBooks/http-request.adoc[]
+
+.response
+include::{snippets}/GuestBooks/http-response.adoc[]
+
+
+
+Adding a new GuestBook Comment
+
+.request
+include::{snippets}/AddGuestBook/http-request.adoc[]
+
+.response
+include::{snippets}/AddGuestBook/http-response.adoc[]
