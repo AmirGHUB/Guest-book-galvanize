@@ -3,6 +3,8 @@ package com.galvanize.guestbook.ControllerTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.galvanize.guestbook.Model.GuestBook;
+import com.galvanize.guestbook.Repository.GuestBookRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
@@ -32,6 +34,14 @@ public class GuestBookControllerTest {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Autowired
+    private GuestBookRepository repository;
+
+    @BeforeEach
+    public void init(){
+        repository.deleteAll();
+    }
 
     @Test
     public void getAllEntries() throws Exception {
